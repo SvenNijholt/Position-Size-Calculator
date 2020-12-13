@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Position Size Calculator</title>
+<link rel="stylesheet" type="text/css" href="main.css" media="all">
+<script type="text/javascript" src="view.js"></script>
+<script type="text/javascript" src="calculator.js"></script>
+</head>
+<aside>
+	<div id="footer">
+		Position Size: 0 
+	</div>
+</aside>
+
+<body id="main_body" >
+	<main>
+		<button onclick="window.location.href='eng/index.html';">
+			English Site
+		  </button>
+	<img id="top" src="top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Position Size Calculator</a></h1>
+		<form id="form_964382" class="appnitro"  method="post" action="" onsubmit="return false;">
+					<div class="form_description">
+		</div>
+							
+			<ul >
+			
+					<li id="li_1" >
+		<label class="description" for="element_1">Portfolio waarde </label>
+		<span class="symbol">$</span>
+		<span>
+			<input id="element_1_1" name="element_1_1" class="element text currency" size="19" value="" type="text" />		
+			<label for="element_1_1"></label>
+		</span>
+		<p class="guidelines" id="guide_1"><small></small></p>
+		</li>
+		<li id="li_6" >
+		<label class="description" for="element_6">Portfolio risico</label>
+		<span class="symbol">%</span>
+		<span>
+			<input id="element_6_1" name="element_6_1" class="element text small" type="text" maxlength="255" value="1"/>
+			<label for="element_6_1"></label>
+		</span>
+		<p class="guidelines" id="guide_6"><small>De procentuele waarde dat je bereid bent de verliezen van je portfolio</small></p>
+		
+		</li>
+		<li id="li_5" >
+		<label class="description" for="element_5">Position Type </label>
+		<div>
+		<select class="element select medium" id="element_5" name="element_5"> 
+			<option value="1" >Long&#x1F4C8</option>
+			<option value="2" >Short&#x1F4C9</option>
+
+		</select>
+		</div><p class="guidelines" id="guide_5"><small></small></p> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Koopprijs</label>
+		<span class="symbol">$</span>
+		<span>
+			<input id="element_2_1" name="element_2_1" class="element text currency" size="19" value="" type="text" />		
+			<label for="element_2_1"></label>
+		</span>
+		<p class="guidelines" id="guide_2"><small></small></p> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Target prijs </label>
+		<span class="symbol">$</span>
+		<span>
+			<input id="element_3_1" name="element_3_1" class="element text currency" size="19" value="" type="text" />		
+			<label for="element_3_1"></label>
+		</span>
+		<p class="guidelines" id="guide_3"><small></small></p> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Stop Loss </label>
+		<span class="symbol">$</span>
+		<span>
+			<input id="element_4_1" name="element_4_1" class="element text currency" size="19" value="" type="text" />	
+			<label for="element_4_1"></label>
+		</span>
+		<p class="guidelines" id="guide_4"><small>.</small></p> 
+		</li>
+			
+					<li class="button">
+			    <input type="hidden" name="form_id" value="964382" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Calculate" onclick="calcTotal()" />
+		</li>
+			</ul>
+		</form>	
+	</main>
+		<div id="footer">
+			Created by Sven
+		</div>
+	</div>
+	
+	<img id="bottom" src="bottom.png" alt="">
+	</body>
+</html>
